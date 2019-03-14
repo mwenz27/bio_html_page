@@ -1,7 +1,7 @@
-/* css Zen Garden submission 080 - 'Zen Pool', by Clinton Barth http://www.516media.com/ */
+/* css Zen Garden submission 210 - 'Oceanscape', by Justin Gray, http://www.pixel-house.com.au/ */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-/* All associated graphics copyright 2004, Clinton Barth */
-/* Added: February 15th, 2004 */
+/* All associated graphics copyright 2007, Justin Gray */
+
 
 /* IMPORTANT */
 /* This design is not a template. You may not reproduce it elsewhere without the
@@ -10,281 +10,291 @@
 
 
 
-/* common styles
------------------------------------------------ */
+
+/*------ basic elements -------------------------------------------------------------*/
+
 body {
-background: #474747;
-font-family: "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, 	helvetica, sans-serif;
-margin: 0px;
-padding: 0px;
-color: #000;
-}
+	font-family: Arial, Helvetica, sans-serif;
+	background: #122981 url(gradient_bg.jpg) repeat-x;
+	margin: 0px;
+	}
+
+p { text-align: justify; color: #fff; font-size: 0.70em; line-height: 1.25em; }
+a:link, a:visited { text-decoration: underline; color: #a5bcff;	}
+a:hover, a:active { text-decoration: none; color: #ff9600; }
+li { text-decoration: none; list-style-type: none; display: block; color: #fff; }
 
 
-/* layout
------------------------------------------------ */
+
+/*------ specific divs --------------------------------------------------------------*/
+
 .page-wrapper {
-position: relative;
-background: #9cf;
-margin: 20px auto;
-padding: 0px;
-width: 700px;
-border: 5px solid #fff;
-}
+	width: 536px;
+	padding-left: 20px;
+	padding-right: 20px;
+        margin: 200px auto 0px auto;
+	position: relative;
+	z-index: 6;
+	}
+
+
+.intro { width: 356px; float: left; }
+header { margin-bottom: 20px; float: left;	}
+
+
+h1 {
+	background: transparent url(h1.gif) no-repeat top left;
+	width: 355px;
+	height: 29px;
+	float: left;
+	margin: 0px;
+	}
+
+h2 {
+	background: transparent url(h2.gif) no-repeat top left;
+	width: 167px;
+	height: 12px;
+	float: right;
+	margin: 2px 0 0 0;
+	}
 
 .summary {
-position: absolute;
-top: 205px;
-left: 0px;
-width: 166px;
-border-bottom: 1px solid #fff;
-border-right: 1px solid #fff;
-}
-
-.preamble, .explanation, .participation, .benefits, .requirements {
-margin: 0px 0 0 192px;
-width: 480px;
-background: transparent;
-}
-
-footer {
-margin: 25px 0 0 0;
-background: transparent url(footer.jpg) top left no-repeat;
-height: 1.5em;
-text-align: right;
-border-top: 1px solid #fff;
-}
-
-.sidebar {
-position: absolute;
-width: 166px;
-top: 26em;
-left: 0px;
-border-top: 1px solid #fff;
-}
-
-
-/* header
------------------------------------------------ */
-
-header {
-	background: url(header.jpg) top left no-repeat;
-	height: 200px;
-	margin: 0;
-	border-bottom: 5px solid #fff;
+	background: transparent url(divider01.jpg) no-repeat;
+	float: left;
+	padding-top: 50px;
 	}
-
-header h1 {
-	display: none;
-	}
-
-header h2 {
-	display: none;
-	}
-
-
-
-/* text
------------------------------------------------ */
-p {
-font-size: 12px;
-padding: 5px 5px 10px 5px;
-margin: 0;
-line-height: 16px;
-}
 
 .summary p:first-child {
-margin: 0;
-padding: 40px 35px 25px 28px;
-font-size: 11px;
-}
-
-.summary p:last-child {
-margin-top: 48em;
-padding: 30px 30px 20px 28px;
-font-size: 11px;
-}
-
-
-
-/* headings
------------------------------------------------ */
-.summary {
-background: transparent url(h3_quickSummary.gif) top left no-repeat;
-margin: 0px;
-}
-
-.intro h3 {
-margin: 10px 0 0 0;
-padding: 0;
-width: 480px;
-height: 35px;
-border: 1px solid #fff;
-}
-
-.supporting h3 {
-margin: 10px 0 0 0;
-padding: 0;
-width: 480px;
-height: 25px;
-border: 1px solid #fff;
-}
-
-.sidebar h3 {
-height: 25px;
-margin: 0px 0 0 0;
-padding: 0px;
-}
-
-h3 {
+	background: transparent url(summary.gif) no-repeat;
+	width: 356px;
+	height: 49px;
+	margin: 0px 0px 6px 0px;
+	}
+.summary p:first-child, h2, h1 {
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 }
 
-.preamble h3 {
-background: transparent url(h3_preamble.jpg) no-repeat top left;
-}
-
-.explanation h3 {
-background: transparent url(h3_explanation.jpg) no-repeat top left;
-}
-
-
-.participation h3 {
-background: transparent url(h3_participation.jpg) no-repeat top left;
-}
-
-.benefits h3 {
-background: transparent url(h3_benefits.jpg) no-repeat top left;
-}
-
-.requirements h3 {
-background: transparent url(h3_requirements.jpg) no-repeat top left;
-}
-
-.design-selection h3 {
-background: transparent url(h3_lselect.gif) no-repeat top left;
-margin: 15px 0 0 5px;
-}
-
-#lfavorites h3 {
-background: transparent url(h3_lfavorites.gif) no-repeat top left;
-margin: 15px 0 0 5px;
-}
-
-.design-archives h3 {
-background: transparent url(h3_larchives.gif) no-repeat top left;
-margin: 15px 0 0 5px;
-}
-
-.zen-resources h3 {
-background: transparent url(h3_lresources.gif) no-repeat top left;
-margin: 15px 0 0 5px;
-}
+.summary p:last-child { width: 355px; display: block; }
 
 
 
+/*-----------------------------------------------------------------------------------*/
 
-/* lists
------------------------------------------------ */
+.supporting { width: 356px; float: left; }
+
+.supporting h3, .intro h3 {
+	letter-spacing: 1px;
+        margin: 0px 0px 20px 0px;
+	color: #7D775C;
+	width: 355px;
+	height: 18px;
+	}
+.preamble, .explanation, .participation, .benefits, .requirements
+{  padding-top: 60px; margin-top: 6px; float: left; }
+
+
+.preamble { background: transparent url(divider02.jpg) no-repeat; }
+.explanation { background: transparent url(divider03.jpg) no-repeat; }
+.participation { background: transparent url(divider04.jpg) no-repeat; }
+.benefits { background: transparent url(divider05.jpg) no-repeat; }
+.requirements { background: transparent url(divider06.jpg) no-repeat; }
+
+
+.sidebar {
+	width: 141px;
+	position: absolute;
+	top: 101px;
+	left: 410px;
+	margin: 0px;
+	padding: 0px;
+	}
+
+.sidebar .wrapper {
+	font-size: 0.70em;
+	background: transparent url(paper-bg.jpg) top left repeat-y;
+	padding: 10px;
+	width: 141px;
+	}
+
 .sidebar ul {
-font-size: 10px;
-list-style: none;
-margin: 2px 0 0 0px;
-padding: 0 0 0 0;
+	margin: 0px;
+	padding: 0px;
+	}
+
+.sidebar a.designer-name {
+    	display: inline;
+    	color: #ff9600;
+	text-decoration: none;
+	font-weight: normal;
+	text-transform: capitalize;
 }
 
-.sidebar ul li {
-background: transparent;
-margin: 0;
-padding: 0 0 0 27px;
-line-height: 14px;
-color: #369;
+.sidebar li a {
+	color: #fff;
+	text-decoration: none;
+	}
+
+.sidebar li a:hover {
+	text-decoration: underline;
+	}
+
+.design-selection li {
+	line-height: 16px;
+        padding: 5px 0px;
+	border-bottom: 1px solid #003d90;
+	}
+.design-selection li a {
+	font-weight: bold;
+	color: #fff;
+	display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+	}
+
+.design-archives li, .zen-resources li {
+	line-height: 16px;
+        padding: 1px 0px;
+	color: #fff;
+	}
+
+
+/*------ Image Replacement for headings----------------------------------------------*/
+
+
+.sidebar h3 {
+	width: 141px;
+	height: 20px;
+	display: block;
+	margin: 0px;
+	}
+
+.preamble h3 { background: transparent url(h3_road.gif) no-repeat; }
+.explanation h3 { background: transparent url(h3_about.gif) no-repeat; }
+.participation h3 { background: transparent url(h3_participation.gif) no-repeat; }
+.benefits h3 { background: transparent url(h3_benefits.gif) no-repeat;	}
+.requirements h3 { background: transparent url(h3_requirements.gif) no-repeat; }
+
+
+.sidebar h3.select { background: transparent url(h3_select.gif) no-repeat; }
+.sidebar h3.archives {
+	margin-top: 22px;
+	background: transparent url(h3_archives.gif) no-repeat;
+	}
+.sidebar h3.resources {
+	margin-top: 22px;
+	background: transparent url(h3_resources.gif) no-repeat;
+	}
+
+.preamble h3,
+.explanation h3,
+.participation h3,
+.benefits h3,
+.requirements h3,
+.sidebar h3.select,
+.sidebar h3.archives,
+.sidebar h3.resources {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
-.sidebar .design-selection {
-border-bottom: 1px solid #fff;
-padding-bottom: 25px;
+
+/*------ footer ---------------------------------------------------------------------*/
+
+footer {
+	margin-top: 20px;
+	margin-bottom: 25px;
 }
 
-.sidebar #lfavorites {
-border-bottom: 1px solid #fff;
-padding-bottom: 25px;
-}
-
-.sidebar .design-archives {
-border-bottom: 1px solid #fff;
-padding-bottom: 25px;
-}
-
-.sidebar .zen-resources {
-border-bottom: 1px solid #fff;
-padding-bottom: 25px;
-}
+footer a:link, footer a:visited {
+	margin-right: 6px;
+	color: #ff9600;
+	}
 
 
-.sidebar .design-selection a:link, .sidebar .design-selection a:visited { display: block; }
-
-.sidebar .design-selection a.designer-name:link, .sidebar .design-selection a.designer-name:visited { display:inline; }
+/*------ main images -----------------------------------------------------------------*/
 
 
-/* links
------------------------------------------------ */
-
-a, a:link, a:visited {
-color: #369;
-text-decoration: underline;
-font-weight: normal;
-}
-
-a:hover {
-color: #fff;
-text-decoration: none;
-font-weight: normal;
-}
-
-.summary a, .summary a:link, .summary a:visited {
-font-weight: bold;
-text-decoration: underline;
-color: #369;
-}
-
-.summary a:hover {
-font-weight: bold;
-text-decoration: none;
-color: #fff;
+.extra1, .extra2, .extra3, .extra3::after, .extra4, .extra5, .extra6, .extra6::after {
+	position: absolute;
 }
 
 
-.sidebar a, .sidebar a:link, .sidebar a:visited {
-color: #000;
-text-decoration: none;
+.extra1 {
+	background: url(clouds.jpg) repeat-x;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	height: 104px;
+	}
+
+.extra2 {
+	background: url(water_edge.jpg) repeat-x;
+	top: 104px;
+	right: 0px;
+	width: 100%;
+	height: 75px;
+	}
+
+.extra3 {
+	background: url(fish01.jpg) no-repeat right top;
+	z-index: 3;
+	top: 960px;
+	right: 4%;
+	width: 300px;
+	height: 123px;
+	}
+
+.extra3::after {
+	display: block;
+	content: " ";
+	background: url(fish_bottom.gif) no-repeat;
+	z-index: 3;
+	top: 1000px;
+	width: 224px;
+	height: 108px;
+	}
+
+.extra4 {
+	background: url(sunlight.jpg) no-repeat;
+	z-index: 3;
+	top: 0px;
+	left: 0px;
+	width: 472px;
+	height: 481px;
+	}
+
+.extra5 {
+	background: url(fish_top.gif) no-repeat;
+	z-index: 7;
+	top: 220px;
+	left: 20px;
+	width: 180px;
+	height: 80px;
+	}
+
+.extra6 {
+	z-index: 2;
+	top: 125em;
+	left: 0px;
+	width: 100%;
+	height: 426px;
+	background: url(seafloor_bg.jpg) repeat-x left bottom;
+	}
+
+.extra6::after {
+	display: block;
+	content: " ";
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+	width: 633px;
+	height: 426px;
+	background: url(seafloor.jpg) no-repeat;
 }
 
-.sidebar a:hover {
-text-decoration: none;
-color: #fff;
-}
 
-.sidebar a.designer-name, .sidebar a.designer-name:link, .sidebar a.designer-name:visited {
-color: #369;
-text-decoration: none;
-}
 
-.sidebar a.designer-name:hover {
-text-decoration: none;
-color: #fff;
-}
 
-footer a, footer a:link, footer a:visited {
-text-decoration: none;
-color: #fff;
-font-size: 12px;
-padding: 0 20px 0 0;
-}
-
-footer a:hover {
-text-decoration: none;
-color: #9cf;
-}
